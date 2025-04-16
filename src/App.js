@@ -1,10 +1,11 @@
-
+import s from "./App.module.css";
 import "./App.css";
+import Schedule from "./components/Schedule/Schedule";
 
 function App() {
      return (
-          <div>
-               <h1>Hello world!</h1>
+          <div className={s.wrapper}>
+               <Schedule />
           </div>
      );
 }
