@@ -1,0 +1,36 @@
+.wrapper {
+     width: 300px;
+     padding: 22px;
+     border-radius: 20px;
+     margin-left: 25px;
+     background: #fff;
+}
+
+.information_wrapper {
+     margin-top: 30px;
+}
+
+.info_block {
+     display: flex;
+     align-items: center;
+     margin-bottom: 25px;
+}
+
+.info_block > div > span {
+     margin-right: 10px;
+}
+
+
+.participants_block{
+    margin-top: 40px;
+}
+
+.participants{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.participants > span{
+    margin: 5px;
+}

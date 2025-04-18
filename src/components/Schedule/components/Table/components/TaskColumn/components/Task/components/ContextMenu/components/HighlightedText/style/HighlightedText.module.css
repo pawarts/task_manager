@@ -1,0 +1,7 @@
+
+
+.text{
+    background: var(--light_grey);
+    padding: 7px 15px;
+    border-radius: 10px;
+}

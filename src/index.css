@@ -4,5 +4,14 @@
 
      box-sizing: border-box;
 
-     font-family: "Geologica", sans-serif;
+     font-family: "Inter", sans-serif;
+}
+
+:root{
+     --light_grey: #f3f3f3
+}
+
+button {
+     border: none;
+     outline: none;
 }

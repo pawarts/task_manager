@@ -1,0 +1,21 @@
+.wrapper {
+     position: absolute;
+     left: 100px;
+
+     display: flex;
+     align-items: start;
+}
+
+.task {
+     width: 300px;
+     padding: 22px;
+
+     background: #ffe8ae;
+     border-radius: 20px;
+}
+
+.time {
+     font-weight: 300;
+     font-size: 0.9em;
+     margin-top: 15px;
+}
