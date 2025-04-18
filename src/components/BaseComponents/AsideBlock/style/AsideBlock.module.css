@@ -1,5 +1,10 @@
 .wrapper {
-     width: 31vw;
+     min-width: 320px;
+     max-width: 31vw;
      background: rgb(53, 53, 53, 0.4);
      backdrop-filter: blur(10px);
+}
+
+.wrapper > div{
+     background: #fff;
 }

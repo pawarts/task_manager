@@ -5,17 +5,17 @@ import { AnimatePresence, motion } from "framer-motion";
 
 import s from "./style/Task.module.css";
 import { useState } from "react";
+import { useSelector } from "react-redux";
 
 const Task = (props) => {
      const { task } = props;
 
      const [moreInfo, setMoreInfo] = useState(false);
 
-     const date = new Date().toISOString().split("T")[0];
+     const date = useSelector((state) => state.date.activeDay);
 
      if (date === task.date) {
           const start_time = Number(task.start_time.split(":")[0]);
-          console.log(start_time);
           const task_position = start_time;
           return (
                <div

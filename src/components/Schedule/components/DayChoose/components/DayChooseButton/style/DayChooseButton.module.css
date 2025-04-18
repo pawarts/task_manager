@@ -1,25 +1,33 @@
-.wrapper{
-    width: 100px;
-    height: 80px;
+.wrapper {
+     width: 100px;
+     height: 80px;
 
-    background: #f3f3f3;
+     background: #f3f3f3;
 
-    margin-right: 20px;
+     margin-right: 20px;
 
-    border-radius: 15px;
+     border-radius: 15px;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
 }
 
-.day_title{
-    font-size: 0.8em;
-    text-align: center;
-    margin: 12px 0;
+.wrapperActive{
+    background: #181818;
 }
 
-.date_number{
-    font-size: 1.5em;
-    font-weight: 800;
+.wrapperActive > p{
+    color: #fff;
+}
+
+.day_title {
+     font-size: 0.8em;
+     text-align: center;
+     margin: 12px 0;
+}
+
+.date_number {
+     font-size: 1.5em;
+     font-weight: 800;
 }
