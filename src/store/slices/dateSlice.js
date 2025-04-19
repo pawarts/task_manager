@@ -4,8 +4,6 @@ import "dayjs/locale/uk";
 
 dayjs.locale("uk");
 
-console.log(dayjs().startOf("week"));
-
 const dateSlice = createSlice({
      name: "date",
      initialState: {
@@ -15,7 +13,6 @@ const dateSlice = createSlice({
 
      reducers: {
           setMondayDate(state, action) {  
-               console.log("action")
                state.mondayDate = action.payload;
           },
           setActiveDay(state, action) {

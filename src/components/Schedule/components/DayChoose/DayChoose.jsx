@@ -9,7 +9,6 @@ const DayChoose = (props) => {
      const [fullWeekDates, setFullWeekDates] = useState([]);
 
      const mondayDate = useSelector((state) => state.date.mondayDate);
-     console.log(mondayDate)
 
      useEffect(() => {
           const week_dates = Array.from({ length: 7 }, (_, i) =>

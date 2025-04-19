@@ -39,6 +39,50 @@ const Calendar = (props) => {
                     <DateCalendar
                          value={dayjs(date)}
                          onChange={(newValue) => weekRange(newValue)}
+                         sx={{
+                              color: "white",
+                              
+                              "& .MuiTypography-root": {
+                                   color: "white",
+                              },
+                              "& .MuiDayCalendar-weekDayLabel": {
+                                   color: "white",
+                              },
+                              "& .MuiPickersCalendarHeader-label": {
+                                   color: "white",
+                              },
+                              "& .MuiSvgIcon-root": {
+                                   color: "white",
+                              },
+                         }}
+                         slotProps={{
+                              year: {
+                                   sx: {
+                                        color: "yellow"
+                                   }
+                              },
+                              day: {
+                                   sx: {
+                                        color: "#ffff",
+                                        "&:hover": {
+                                             color: "black",
+                                             bgcolor: "#E7B4BD",
+                                        },
+                                        "&.Mui-selected": {
+                                             bgcolor: "#DA667B",
+                                             "&:focus": {
+                                                  bgcolor: "#DA667B",
+                                             },
+                                        },
+                                        "&.MuiPickersDay-today": {
+                                             border: "1px solid #DA667B",
+                                        },
+                                   },
+                              },
+                              yearButton: {
+                                   color: "blue"
+                              }
+                         }}
                     />
                </LocalizationProvider>
           </div>
