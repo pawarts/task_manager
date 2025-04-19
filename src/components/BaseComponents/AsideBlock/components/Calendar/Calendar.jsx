@@ -22,9 +22,7 @@ const Calendar = (props) => {
      const dispatch = useDispatch();
 
      const weekRange = (value) => {
-          const day = new Date(value.$d).toISOString().split("T")[0];
-
-          const selectedDay = dayjs(day);
+          
           const firstDay = value.startOf("week").format("YYYY-MM-DD");
           dispatch(setActiveDay(value.format("YYYY-MM-DD")));
           dispatch(setMondayDate(firstDay));
@@ -41,7 +39,7 @@ const Calendar = (props) => {
                          onChange={(newValue) => weekRange(newValue)}
                          sx={{
                               color: "white",
-                              
+
                               "& .MuiTypography-root": {
                                    color: "white",
                               },
@@ -54,12 +52,18 @@ const Calendar = (props) => {
                               "& .MuiSvgIcon-root": {
                                    color: "white",
                               },
+
+                              ".MuiYearCalendar-button": {
+                                   "&.Mui-selected": {
+                                        bgcolor: "#DA667B",
+                                   },
+                              },
                          }}
                          slotProps={{
                               year: {
                                    sx: {
-                                        color: "yellow"
-                                   }
+                                        color: "yellow",
+                                   },
                               },
                               day: {
                                    sx: {
@@ -79,9 +83,6 @@ const Calendar = (props) => {
                                         },
                                    },
                               },
-                              yearButton: {
-                                   color: "blue"
-                              }
                          }}
                     />
                </LocalizationProvider>

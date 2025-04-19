@@ -4,10 +4,13 @@ import Task from "./components/Task/Task";
 
 import s from "./style/TaskColumn.module.css";
 import { useEffect, useRef } from "react";
+import { useScrollTop } from "../../Table";
 
 const TaskColumn = (props) => {
      const tasks = json;
      const date = useSelector((state) => state.date.activeDay);
+
+     const { setScrollTop } = useScrollTop();
 
      const taskWindow = useRef(null);
 
@@ -15,27 +18,27 @@ const TaskColumn = (props) => {
           .filter((task) => task.date === date)
           .map((element, index) => <Task task={element} key={index} />);
 
-
-
      useEffect(() => {
           const scrollToTask = (event) => {
-               if (taskWindow.current) {
-                    if (task.length > 0) {
-                         const start_time = Number(
-                              task[0].props.task.start_time.split(":")[0]
-                         );
-     
-                         const task_position = start_time * 110;
-                         taskWindow.current.scrollTo({
-                              top: task_position,
-                              behavior: "smooth",
-                         });
-                    }
+               if (task.length > 0) {
+                    const start_time = Number(
+                         task[0].props.task.start_time.split(":")[0]
+                    );
+
+                    const task_position = start_time * 110;
+                    
+                    setScrollTop(task_position);
+               } else {
+                    const date = new Date();
+
+                    const hour = date.getHours();
+
+                    setScrollTop(hour * 110);
                }
           };
 
-          scrollToTask()
-     }, [date, task]);
+          scrollToTask();
+     }, [date, task, setScrollTop]);
 
      return (
           <div className={s.wrapper} ref={taskWindow}>

@@ -13,6 +13,12 @@
      align-items: center;
 
      cursor: pointer;
+
+     transition: .3s;
+}
+
+.wrapper:not(.wrapperActive):hover {
+     background: #ededed;
 }
 
 .wrapperActive{

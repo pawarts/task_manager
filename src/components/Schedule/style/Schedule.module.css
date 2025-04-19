@@ -1,4 +1,5 @@
 .wrapper {
+    position: relative;
     display: flex;
     flex-direction: column;
      width: 100%;
@@ -7,4 +8,6 @@
      padding: 66px 0 0 20px;
      border-radius: 26px;
      background: #fff;
+     overflow: hidden;
+     
 }

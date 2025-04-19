@@ -8,7 +8,7 @@ const TimeColumn = (props) => {
      for (let i = 0; i < 24; i++) {
           const time = `${i < 10 ? "0" : ""}${i}:00`;
           time_table.push(
-               <div key={i} className="time-column-item">
+               <div key={i}>
                     <TimeTitle time={time} />
                </div>
           );
