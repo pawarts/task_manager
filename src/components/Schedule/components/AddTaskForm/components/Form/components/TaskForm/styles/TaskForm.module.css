@@ -1,0 +1,26 @@
+.wrapper {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+
+     padding: 20px 0;
+}
+.wrapper > section {
+     margin-top: 50px;
+}
+
+.wrapper > section > h3 {
+     margin-bottom: 20px;
+}
+
+.separator {
+     display: inline-block;
+     border: 1px solid grey;
+     width: 10px;
+     margin: 0 10px;
+}
+
+.time_field {
+     display: flex;
+     align-items: center;
+}

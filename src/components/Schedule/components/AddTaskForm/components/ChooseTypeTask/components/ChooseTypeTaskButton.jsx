@@ -1,10 +1,10 @@
-import { ChosedFormContext } from "../../../AddTaskForm";
+import { useChosedFormContext } from "../../../AddTaskForm";
 import s from "./styles/ChooseTypeTaskButton.module.css";
 
 const ChooseTypeTaskButton = (props) => {
      const { icon, title, mode } = props;
 
-     const { setChosedForm } = ChosedFormContext();
+     const { setChosedForm } = useChosedFormContext();
 
      return (
           <button className={s.wrapper} onClick={() => setChosedForm(mode)}>

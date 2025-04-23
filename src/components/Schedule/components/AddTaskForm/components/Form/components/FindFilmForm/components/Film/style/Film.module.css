@@ -1,0 +1,38 @@
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 55px;
+}
+
+.main_info{
+    cursor: pointer;
+}
+
+
+.genre{
+    color: #8e8e8e;
+    font-weight: 400;
+}
+
+.title{
+    margin: 10px 0 5px 0;
+}
+
+.poster{
+    width: 129.5px;
+    height: 192px;
+
+    border-radius: 5px;
+
+    object-fit: cover;
+}
+
+
+.submit_button{
+    padding: 9px 16px;
+    background: #181818;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 15px;
+}

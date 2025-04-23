@@ -14,20 +14,25 @@ const TaskColumn = (props) => {
 
      const taskWindow = useRef(null);
 
-     const task = tasks.schedule
-          .filter((task) => task.date === date)
-          .map((element, index) => <Task task={element} key={index} />);
+     const task = tasks.schedule[date]
+          ? tasks.schedule[date].map((element, index) => {
+                 return <Task key={index} task={element} />;
+            })
+          : null;
 
+          
      useEffect(() => {
           const scrollToTask = (event) => {
-               if (task.length > 0) {
-                    const start_time = Number(
-                         task[0].props.task.start_time.split(":")[0]
-                    );
+               if (task) {
+                    if (task.length > 0) {
+                         const start_time = Number(
+                              task[0].props.task.start_time.split(":")[0]
+                         );
 
-                    const task_position = start_time * 110;
-                    
-                    setScrollTop(task_position);
+                         const task_position = start_time * 110;
+
+                         setScrollTop(task_position);
+                    }
                } else {
                     const date = new Date();
 

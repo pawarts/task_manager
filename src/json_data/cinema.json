@@ -1,0 +1,83 @@
+[
+     {
+          "date": "2025-04-19",
+          "movies": [
+               {
+                    "title": "Дюна: Частина друга",
+                    "duration": 165,
+                    "genre": "Наукова фантастика",
+                    "session": {
+                         "time": "16:00",
+                         "hall": "Зал 1",
+                         "language": "українська",
+                         "price": 170
+                    }
+               },
+               {
+                    "title": "Барбі",
+                    "duration": 114,
+                    "genre": "Комедія",
+                    "session": {
+                         "time": "13:30",
+                         "hall": "Зал 2",
+                         "language": "українська",
+                         "price": 120
+                    }
+               },
+               {
+                    "poster": "https://m.media-amazon.com/images/M/MV5BYjI3NDU0ZGYtYjA2YS00Y2RlLTgwZDAtYTE2YTM5ZjE1M2JlXkEyXkFqcGc@._V1_.jpg",
+                    "title": "Оппенгеймер",
+                    "duration": 180,
+                    "genre": "Драма",
+                    "session": {
+                         "time": "18:30",
+                         "hall": "Зал 3",
+                         "language": "англійська (субтитри)",
+                         "price": 190
+                    }
+               }
+          ]
+     },
+
+     {
+          "date": "2025-04-22",
+          "movies": [
+               {
+                    "title": "Дюна: Частина друга",
+                    "poster": "https://uaserials.net/uploads/posts/2024-03/8520-djuna-chastina-druga.jpg",
+                    "duration": 16,
+                    "genre": "Наукова фантастика",
+                    "session": {
+                         "time": "13:00",
+                         "hall": "Зал 1",
+                         "language": "українська",
+                         "price": 170
+                    }
+               },
+               {
+                    "title": "Вовк з Уолл-стріт",
+                    "poster": "https://m.media-amazon.com/images/I/71Xt2UpcoBL._AC_UF894,1000_QL80_.jpg",
+                    "duration": 114,
+                    "genre": "Комедія/Трилер",
+                    "session": {
+                         "time": "14:40",
+                         "hall": "Зал 2",
+                         "language": "українська",
+                         "price": 120
+                    }
+               },
+               {
+                    "title": "Оппенгеймер",
+                    "poster": "https://upload.wikimedia.org/wikipedia/en/4/4a/Oppenheimer_%28film%29.jpg",
+                    "duration": 180,
+                    "genre": "Драма",
+                    "session": {
+                         "time": "20:30",
+                         "hall": "Зал 3",
+                         "language": "англійська (субтитри)",
+                         "price": 190
+                    }
+               }
+          ]
+     }
+]

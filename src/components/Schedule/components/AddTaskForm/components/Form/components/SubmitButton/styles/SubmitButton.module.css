@@ -1,0 +1,17 @@
+
+.submit_button{
+    width: 320px;
+    padding: 9px 0;
+
+    margin-top: 20px;
+    background: #181818;
+    color: #fff;
+
+    border-radius: 5px;
+
+    transition: .3s;
+}
+
+.submit_button:disabled{
+    background: #484848;
+}

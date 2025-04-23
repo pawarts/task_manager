@@ -1,0 +1,25 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: #3b3b3b48;
+
+    cursor: pointer;
+}
+
+.content{
+    width: 50%;
+    height: 60%;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+}

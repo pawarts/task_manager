@@ -78,6 +78,10 @@ const Calendar = (props) => {
                                                   bgcolor: "#DA667B",
                                              },
                                         },
+                                        "&.Mui-selected:hover": {
+                                             bgcolor: "#DA667B",
+                                             color: "#fffff"
+                                        },
                                         "&.MuiPickersDay-today": {
                                              border: "1px solid #DA667B",
                                         },
